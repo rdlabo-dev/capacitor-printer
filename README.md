@@ -2,6 +2,8 @@
 
 printer plugin for capacitor
 
+**Documentation:** [Read the full documentation](https://docs.rdlabo.dev/projects/capacitor-printer)
+
 ## Install
 
 ```bash
