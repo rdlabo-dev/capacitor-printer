@@ -20,10 +20,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rdlabo-team/capacitor-printer.git"
+    "url": "git+https://github.com/rdlabo-dev/capacitor-printer.git"
   },
   "bugs": {
-    "url": "https://github.com/rdlabo-team/capacitor-printer/issues"
+    "url": "https://github.com/rdlabo-dev/capacitor-printer/issues"
   },
   "keywords": [
     "capacitor",
