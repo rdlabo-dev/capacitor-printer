@@ -71,10 +71,10 @@ Use this plugin when your app needs to present the system print dialog, such as:
 
 <docgen-index>
 
-- [`printFile(...)`](#printfile)
-- [`printWebView(...)`](#printwebview)
-- [Interfaces](#interfaces)
-- [Type Aliases](#type-aliases)
+* [`printFile(...)`](#printfile)
+* [`printWebView(...)`](#printwebview)
+* [Interfaces](#interfaces)
+* [Type Aliases](#type-aliases)
 
 </docgen-index>
 
@@ -98,7 +98,8 @@ Only available on Android and iOS.
 | ------------- | ------------------------------------------------------------- |
 | **`options`** | <code><a href="#printfileoptions">PrintFileOptions</a></code> |
 
----
+--------------------
+
 
 ### printWebView(...)
 
@@ -112,9 +113,11 @@ Present the printing user interface to print the web view content.
 | ------------- | ----------------------------------------------------- |
 | **`options`** | <code><a href="#printoptions">PrintOptions</a></code> |
 
----
+--------------------
+
 
 ### Interfaces
+
 
 #### PrintFileOptions
 
@@ -123,19 +126,20 @@ Present the printing user interface to print the web view content.
 | **`path`**     | <code>string</code> | The path to the file. Android supports file paths, `file://` URLs, and `content://` URLs. iOS supports file paths and local `file://` URLs. |
 | **`mimeType`** | <code>string</code> | The MIME type of the file. Only used on Android.                                                                                            |
 
+
 #### PrintOptions
 
 | Prop       | Type                | Description                | Default                 |
 | ---------- | ------------------- | -------------------------- | ----------------------- |
 | **`name`** | <code>string</code> | The name of the print job. | <code>'Document'</code> |
 
+
 ### Type Aliases
+
 
 #### PrintWebViewOptions
 
-<code>
-  <a href="#printoptions">PrintOptions</a>
-</code>
+<code><a href="#printoptions">PrintOptions</a></code>
 
 </docgen-api>
 
