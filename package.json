@@ -26,6 +26,7 @@
   "bugs": {
     "url": "https://github.com/rdlabo-dev/capacitor-printer/issues"
   },
+  "homepage": "https://docs.rdlabo.dev/projects/capacitor-printer",
   "keywords": [
     "capacitor",
     "plugin",
