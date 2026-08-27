@@ -24,7 +24,7 @@ npx cap sync
 
 ## Usage
 
-See [PDF](./docs/pdf.md) to print a file and [Web](./docs/web.md) to print the current WebView.
+See [PDF](https://docs.rdlabo.dev/projects/capacitor-printer/docs/pdf) to print a file and [Web](https://docs.rdlabo.dev/projects/capacitor-printer/docs/web) to print the current WebView.
 
 <!-- rdlabo-docs-omit -->
 ### Print a file
