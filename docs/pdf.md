@@ -14,4 +14,8 @@ try {
 }
 ```
 
-Android supports file paths, `file://` URLs, and `content://` URLs. iOS supports file paths and local `file://` URLs. `mimeType` is Android-only. Signatures are on the [API](/docs/api#printfile) page.
+Android supports file paths, `file://` URLs, and `content://` URLs. iOS supports file paths and local `file://` URLs. `mimeType` is Android-only.
+
+<!-- !::printFile:: -->
+
+<!-- !::PrintFileOptions:: -->

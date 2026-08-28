@@ -8,4 +8,8 @@ import { Printer } from '@rdlabo/capacitor-printer';
 await Printer.printWebView({ name: 'Document' });
 ```
 
-`name` is the print job name and defaults to `'Document'`. Signatures are on the [API](/docs/api#printwebview) page.
+`name` is the print job name and defaults to `'Document'`.
+
+<!-- !::printWebView:: -->
+
+<!-- !::PrintWebViewOptions:: -->
