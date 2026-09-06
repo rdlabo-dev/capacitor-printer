@@ -7,7 +7,7 @@
 
 Print files or the current web view from a Capacitor app.
 
-This plugin wraps the native printing UI on iOS and Android. You can print a local file (for example, a PDF generated in your app) or the content of the current web view.
+This plugin wraps the native printing UI on iOS and Android. Start with the current WebView (no external file), or print a local file such as a PDF generated in your app.
 
 <!-- rdlabo-docs-omit -->
 **Full documentation:** [https://docs.rdlabo.dev/projects/capacitor-printer](https://docs.rdlabo.dev/projects/capacitor-printer)
@@ -24,33 +24,30 @@ npx cap sync
 
 ## Usage
 
-See [PDF](./docs/pdf.md) to print a file and [Web](./docs/web.md) to print the current WebView.
+From a button handler, print the current WebView to open the system print UI: [Print WebView](./docs/web.md). Print a real local PDF or other file with [Print PDF and files](./docs/pdf.md).
 
 <!-- rdlabo-docs-omit -->
-### Print a file
-
-```ts
-import { Printer } from '@rdlabo/capacitor-printer';
-
-const printPdf = async (filePath: string) => {
-  try {
-    await Printer.printFile({
-      path: filePath,
-      mimeType: 'application/pdf',
-    });
-  } finally {
-    // The source file can be deleted once the promise settles.
-  }
-};
-```
-
 ### Print the current web view
 
 ```ts
 import { Printer } from '@rdlabo/capacitor-printer';
 
 const printPage = async () => {
-  await Printer.printWebView({ name: 'My Receipt' });
+  await Printer.printWebView({ name: 'Document' });
+};
+```
+
+### Print a file
+
+```ts
+import { Printer } from '@rdlabo/capacitor-printer';
+
+const printPdf = async (filePath: string) => {
+  await Printer.printFile({
+    path: filePath,
+    mimeType: 'application/pdf',
+  });
+  // After await, the OS no longer needs the source; you may delete it then.
 };
 ```
 
